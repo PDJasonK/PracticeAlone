@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자</title>
+
+<style>
+
+/* [id] id 속성을 가진요소 */
+[id] {
+
+    background-color:blanchedalmond;
+}
+
+/* input 태그 중 id 속성을 가진 요소 */
+input[id]  {
+    font-weight: bold;
+
+}
+
+/*id 속성이 value인 요소 */
+[id="lg"] {
+    list-style: bold;
+
+
+
+}
+/* value가 디폴트로 설정된 값이 있다 할떄의 경우*/
+[target="_self"] {
+    text-decoration: none;
+
+    
+}
+
+
+/* ol 태그자손 요소중 href 속성을 가진*/
+ol [href] {
+    font-size:25px;
+
+
+}
+
+/*                                     href 속성과 target 속성을 가진요소           */
+[href][target] {
+    font-style: italic;
+}
+
+
+/*지정된 value ("font")로 시작되는 class 속성
+*/
+[class^="font"] {
+    color: green;
+
+
+}
+/* 지정된 value ("size") 로 끝나는 class*/
+
+[class$="size"] {
+    color:red;
+
+}
+/* 지정된 value("co.")가 포함되는 href*/
+[href*="co."] {
+    text-decoration: line-through;
+
+
+}
+
+
+[class]
+
+</style>
+
+
+</head>
+<body>
+    <ul>
+
+
+        <li id="naver"><a href="http://www.naver.com">네이버 바로가기</a></li>
+        <li id="naver"><a href="http://www.google.com">구글 바로가기 </a></li>
+        <li id="naver"><a href="http://www.bing.com">빙 바로가기 </a></li>
+
+    </ul>
+    
+
+
+    <hr>
+    <ol>
+        <li id="samsung"><a href="https://www.samsung.com">삼성</a></li>
+        <li id="samsung"><a href="https://www.lge.co.kr">LG</a></li>
+        <li id="samsung"><a href="https://www.kt.co.kr">KT</a></li>
+        <li>현대</li>
+        <li>한화</li>
+
+    </ol>
+
+    <hr>
+
+  
+<form action="#">
+                <div>
+            <label for="name" class="frontstyle color">이름</label>
+            <input type="text" id="name" placeholder="이름을 입력해주세요."
+        </div>
+
+        <button>중복 확인하기</button>
+  
+        <div>
+            <label class="color frontstyle"> 주소
+                <input type="text" placeholder="주소를입력하세요"
+            
+            </label>
+
+            <button> 접속하기 </button>
+
+
+        </div>
+    </form>
+
+    
+</body>
+</html>
